@@ -3,24 +3,25 @@
 :root{font-family:Arial,Helvetica,sans-serif;color:#272b25;background:#e5e5df;font-synthesis:none;--ink:#252922;--lime:#d4ed80;--paper:#f7f7f0;--mono:'Courier New',monospace}*{box-sizing:border-box}body{margin:0;overflow:hidden}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;color:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #728f30;outline-offset:4px}button{border:0}a{color:inherit}button:disabled{cursor:default}button:hover{filter:brightness(.96)}[hidden]{display:none!important}#room,#desktop{position:fixed;inset:0;min-height:400px}#room{background:#e5e5df}#scene{position:absolute;inset:0}#scene canvas{width:100%;height:100%;display:block}.identity{position:absolute;top:43px;left:4.2%;z-index:2}.identity a{text-decoration:none;letter-spacing:-2px;font-size:35px;font-weight:800}.dot{color:#72924a}.identity-line{font:12px var(--mono);letter-spacing:1.2px;margin-top:10px}.location{font:12px var(--mono);color:#606359;margin-top:10px}.divider{margin:0 12px;color:#94998d}.room-number{position:absolute;top:51px;right:4.2%;text-align:right;font:12px/1.9 var(--mono);letter-spacing:1.2px}.room-number span{color:#787d71}.intro{position:absolute;top:38%;left:4.2%;width:330px;z-index:2}.eyebrow{font:12px/1.6 var(--mono);letter-spacing:1.4px}.intro h1{font-size:clamp(36px,3.7vw,56px);line-height:1.04;font-weight:500;letter-spacing:-2.8px;margin:19px 0 18px}.intro p{font-size:16px;line-height:1.65;color:#64675d}.primary{background:#272d23;color:#f5f7ed;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:40px;border-radius:5px;font-size:14px;margin-top:26px}.primary span{font-size:21px;color:var(--lime)}.primary:hover{background:#414c30}.tiny{display:block;font:12px var(--mono);margin-top:17px;color:#6d7462}.room-footer{position:absolute;bottom:25px;left:4.2%;right:4.2%;display:flex;justify-content:space-between;align-items:center;font:12px var(--mono);letter-spacing:.5px;color:#68705e}.text-button{background:none;padding:8px 0;font-size:12px}.room-footer>div{display:flex;align-items:center}#room.leaving .identity,#room.leaving .intro,#room.leaving .room-number,#room.leaving .room-footer{opacity:0;transition:opacity .35s}#desktop{background:radial-gradient(ellipse at 85% 100%,#acb798 0,transparent 60%),linear-gradient(135deg,#4b665b,#8b9c83);color:#f9faf4}.wallpaper-word{position:absolute;right:9%;top:24%;font-size:clamp(70px,12vw,185px);line-height:.88;letter-spacing:-.085em;font-weight:800;color:#e9f2d423;user-select:none;pointer-events:none}.menubar{height:46px;background:#e8ecdeed;color:#2d3529;backdrop-filter:blur(14px);display:flex;align-items:center;gap:23px;padding:0 25px;font-size:14px;border-bottom:1px solid #0001}.wordmark{font-size:28px;font-weight:bold;letter-spacing:-3px;background:none}.wordmark span{color:#748549}.menubar-label{font:12px var(--mono);color:#69715e}.menu-right{margin-left:auto;display:flex;align-items:center;gap:25px;font:12px var(--mono)}.menu-right button{background:none;font:12px var(--mono)}.desktop-icons{position:absolute;top:75px;left:28px;display:flex;flex-direction:column;gap:16px}.desktop-icons>button{background:transparent;display:flex;flex-direction:column;align-items:center;gap:9px;width:92px;padding:8px 3px;color:white;font-size:12px;text-shadow:0 1px 3px #0007;border:1px solid transparent;border-radius:8px}.desktop-icons>button:hover{background:#ffffff14;border-color:#ffffff35}.app-icon{width:55px;height:54px;display:grid;place-items:center;font-weight:bold;font-size:29px;border:1px solid #ffffff55;border-radius:12px;box-shadow:0 5px 10px #26302a22,inset 0 1px #fff9;text-shadow:none}.ivory{background:#e8ecd9;color:#37412f}.blue{background:#9dcbd0;color:#35566a}.gold{background:#eac471;color:#493c24}.pink{background:#d7afa2;color:#603b3c}.black{background:#252d28;color:#d4ed80;font:22px var(--mono)}.desktop-caption{position:absolute;right:43px;bottom:102px;text-align:right;font:14px/1.6 var(--mono);color:#edf1e2a0;pointer-events:none}.dock{position:absolute;bottom:41px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center;border:1px solid #ffffff60;background:#dfe7d6a8;backdrop-filter:blur(20px);padding:10px;border-radius:17px;z-index:300}.dock button{width:43px;height:43px;background:#eef0e5;color:#374331;border-radius:10px;font-size:23px;transition:transform .15s;position:relative;box-shadow:0 2px 4px #0002}.dock button:nth-child(2){background:#afd1d7}.dock button:nth-child(3){background:#edcd87}.dock button:nth-child(4){background:#e0b8a8}.dock button:nth-child(5){background:#2c352c;color:var(--lime);font:17px var(--mono)}.dock button.running:after{content:'';position:absolute;bottom:-6px;left:20px;width:4px;height:4px;border-radius:50%;background:#33412a}.dock button:hover{transform:translateY(-5px)}.dock>span{height:32px;width:1px;background:#74856650;margin:0 2px}.desktop-bottom{position:absolute;bottom:9px;left:25px;right:25px;display:flex;justify-content:space-between;font:11px var(--mono);color:#f3f6e6b0;align-items:center}.desktop-bottom button{background:none;color:inherit;font:12px var(--mono);padding:7px 0}.window{position:absolute;top:94px;left:max(155px,calc(50% - 300px));width:min(680px,calc(100vw - 200px));height:min(580px,calc(100dvh - 210px));min-height:220px;display:flex;flex-direction:column;background:#f7f7f0;color:#2d3529;border:1px solid #303b3240;border-radius:12px;box-shadow:0 28px 65px #11291f40,0 3px 10px #11291f25;overflow:hidden;animation:window-in .23s ease-out}.window.maximized{inset:58px 12px 120px!important;width:auto!important;height:auto!important}.window-header{height:43px;min-height:43px;display:flex;align-items:center;padding:0 14px;background:#eceee5;border-bottom:1px solid #dadfd0;touch-action:none;user-select:none;cursor:grab}.window-header:active{cursor:grabbing}.window-actions{display:flex;gap:8px}.window-actions button{border-radius:50%;width:15px;height:15px;padding:0;font-size:12px;display:grid;place-items:center;line-height:1;background:#d9c6bb;border:1px solid #0002;color:#513f32}.window-actions button:nth-child(2){background:#d8cf9c}.window-actions button:nth-child(3){background:#b6c89d}.window-actions button span{opacity:0}.window-actions button:hover span,.window-actions button:focus-visible span{opacity:1}.window-title{position:absolute;left:50%;transform:translateX(-50%);font:12px var(--mono);pointer-events:none;white-space:nowrap;color:#626d56}.window-content{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain}.content-pad{padding:35px 38px}.file-path{font:12px var(--mono);color:#7c8570;border-bottom:1px solid #dfe2d6;padding:11px 25px}.about-top{display:flex;justify-content:space-between;gap:20px;align-items:start}.monogram{font-weight:bold;font-size:37px;letter-spacing:-4px;width:79px;height:79px;display:grid;place-items:center;background:#dbe5c9;border-radius:18px;border:1px solid #c3cfaf}.kicker{font:12px/1.5 var(--mono);letter-spacing:1.2px;color:#7c875f;margin-bottom:15px}.content-pad h2{font-size:39px;letter-spacing:-1.8px;line-height:1.07;font-weight:500;margin:0 0 13px}.about-role{font:14px var(--mono);color:#667153}.content-pad p{font-size:16px;line-height:1.7;color:#59634e}.about-body{margin-top:30px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.chips span{font:12px var(--mono);padding:7px 10px;border:1px solid #d4dac8;border-radius:4px;color:#637052}.currently{border-top:1px solid #d9dfcf;padding-top:22px;margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:12px}.currently small{font:11px var(--mono);letter-spacing:1px;color:#7f876f}.currently b{font-size:15px;display:block;margin-top:7px;font-weight:500}.inline-button{font-size:13px;background:#e4ead8;padding:12px 14px;border-radius:5px;white-space:nowrap}.project-list{display:grid;gap:14px;margin-top:26px}.project-card{border:1px solid #d4dbca;border-radius:8px;overflow:hidden}.project-heading{padding:19px 22px;display:flex;justify-content:space-between;gap:15px;align-items:center}.project-heading h3{font-size:19px;letter-spacing:-.5px;margin:0 0 5px}.project-heading span{font:11px var(--mono);color:#7b846f}.project-card p{font-size:14px;margin:0;padding:0 22px 20px;line-height:1.65}.project-card button{background:none;width:100%;text-align:left}.project-card button:hover{background:#eaf0e0}.project-card .arrow{font-size:23px;color:#637b44}.note-card{background:#12293e;color:#f6f1e7;border:0}.note-card .project-heading span,.note-card p{color:#c0c8c6}.note-card button:hover{background:#1b364e}.note-card .arrow{color:#f0a81e}.project-detail{display:none;padding:18px 22px;border-top:1px solid #d4dbca;font-size:14px;line-height:1.7;color:#5b684b}.project-card.expanded .project-detail{display:block}.smart-cover{background:#12293e;padding:34px 38px;color:#f6f1e7}.smart-cover .kicker{color:#b6c9ce}.smart-cover h2{font-size:40px;letter-spacing:-1.6px;margin:0 0 12px;font-weight:500}.smart-cover p{font-size:18px;line-height:1.5;margin:0;max-width:340px;color:#d1dbdd}.memory-bars{display:flex;gap:7px;align-items:end;margin-bottom:26px}.memory-bars span{width:12px;height:14px;background:#da3a2a;border-radius:3px}.memory-bars span:nth-child(2){height:23px;background:#f0a81e}.memory-bars span:nth-child(3){height:32px;background:#0e9b8e}.memory-bars span:nth-child(4){height:41px;background:#f6f1e7}.smart-link{display:inline-flex;align-items:center;justify-content:space-between;gap:30px;padding:14px 18px;background:#12293e;border-radius:5px;color:#fff;text-decoration:none;font-size:14px;margin-top:12px}.principles{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin:25px 0}.principles div{border-top:1px solid #d5ddc9;padding-top:13px}.principles strong{display:block;font-size:14px;margin-bottom:6px}.principles span{font-size:13px;color:#707c60;line-height:1.5}.timeline{margin-top:30px}.timeline-item{border-left:1px solid #c5ceba;padding:0 0 29px 23px;position:relative}.timeline-item:before{content:'';width:7px;height:7px;background:#91a771;border-radius:50%;position:absolute;left:-4px;top:3px}.timeline-item time{font:12px var(--mono);color:#7b895f}.timeline-item h3{font-size:17px;margin:9px 0}.timeline-item p{font-size:14px;margin:0;line-height:1.65}.terminal-content{background:#202923;color:#cedabf;padding:24px;font:14px/1.7 var(--mono);min-height:100%}.terminal-content p{margin:0 0 12px;white-space:pre-wrap}.terminal-content .terminal-intro{color:#92a881}.terminal-output{white-space:pre-wrap;overflow-wrap:anywhere;margin-bottom:16px}.terminal-command{color:#e3ebcd}.terminal-form{display:flex;align-items:start;gap:8px}.terminal-form label{white-space:nowrap;color:#c1de86}.terminal-form input{background:none;border:0;color:#e7efdc;outline:0;min-width:0;width:100%;font:14px/1.7 var(--mono);padding:0}.terminal-form input:focus-visible{outline:1px solid #c1de8666;outline-offset:3px}.toast{position:fixed;bottom:125px;left:50%;transform:translateX(-50%) translateY(10px);padding:12px 18px;background:#202820;color:#eef2e5;border-radius:7px;font-size:13px;z-index:500;pointer-events:none;opacity:0;transition:.2s}.toast.visible{opacity:1;transform:translateX(-50%)}.no-script{position:fixed;inset:0;background:var(--paper);padding:10%;z-index:999}.scene-failed #scene-hint{display:none}.scene-failed .intro{width:auto}.scene-failed #room{background:radial-gradient(at 75% 50%,#c4d2b2,transparent 60%),#e5e5df}@keyframes window-in{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:none}}@media(min-width:1600px){.intro{top:40%;left:6%}.identity{left:6%}.room-footer{left:6%;right:6%}}@media(max-width:900px){.intro{width:260px}.intro h1{font-size:38px}.identity-line{font-size:11px}.room-number{font-size:11px}.menubar-label{display:none}.content-pad{padding:27px}.window{left:145px;width:calc(100vw - 180px)}.room-footer>span{font-size:10px}}@media(max-width:650px){.identity{left:24px;top:27px}.identity a{font-size:30px}.room-number{display:none}.intro{top:26%;left:24px;width:calc(100% - 48px)}.intro h1{font-size:46px}.intro p{max-width:290px}.room-footer{left:24px;right:24px;bottom:22px}.room-footer>span{display:none}.room-footer>div{margin-left:auto}.menubar{padding:0 14px;gap:13px;height:47px}.menubar b{font-size:12px}.menu-right{gap:12px}.menu-right button{font-size:11px}.menu-right time{font-size:11px}.desktop-icons{top:76px;left:12px;right:12px;display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.desktop-icons>button{width:auto;font-size:13px}.app-icon{width:58px;height:58px}.wallpaper-word{top:46%;right:9%;font-size:90px}.window,.window.maximized{left:9px!important;top:59px!important;width:calc(100vw - 18px)!important;height:calc(100dvh - 173px)!important;right:9px!important;bottom:114px!important;border-radius:10px}.window-header{height:46px;min-height:46px}.window-actions{gap:11px}.window-actions button{width:17px;height:17px}.window-actions button span{opacity:.65}.content-pad{padding:26px 23px}.content-pad h2{font-size:34px}.monogram{height:63px;width:63px;flex-shrink:0;font-size:32px}.about-role{font-size:12px;line-height:1.6}.currently{align-items:start;flex-direction:column}.smart-cover{padding:29px 24px}.smart-cover h2{font-size:36px}.smart-cover p{font-size:17px}.dock{bottom:34px;gap:7px;padding:8px;border-radius:14px}.dock button{width:37px;height:40px;font-size:21px}.desktop-bottom{left:15px;right:15px;bottom:3px}.desktop-bottom>span{display:none}.desktop-caption{right:24px;bottom:150px}.terminal-content{font-size:13px;padding:18px}.terminal-form input{font-size:16px}.terminal-form label{font-size:12px}.terminal-form{gap:6px}.file-path{padding-left:23px}.principles{gap:12px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 </style><style>/* ---- Room: readability over the 3D scene, and a little film grade ---- */
-#scene{opacity:0;filter:saturate(1.05) contrast(1.02);transition:opacity 1.2s cubic-bezier(.3,.7,.3,1)}
+#scene{opacity:0;filter:saturate(1.04);transition:opacity 1.2s cubic-bezier(.3,.7,.3,1)}
 #scene.ready{opacity:1}
 .scene-veil,.scene-vignette{position:absolute;inset:0;z-index:1;pointer-events:none}
-.scene-veil{background:linear-gradient(96deg,rgba(236,236,228,.96) 0%,rgba(236,236,228,.9) 17%,rgba(236,236,228,.5) 29%,rgba(236,236,228,0) 41%),linear-gradient(180deg,rgba(236,236,228,.8) 0%,rgba(236,236,228,0) 15%)}
-.scene-vignette{background:radial-gradient(128% 108% at 48% 38%,rgba(84,91,72,0) 50%,rgba(84,91,72,.08) 79%,rgba(68,74,58,.2) 100%)}
-.scene-vignette:after{content:'';position:absolute;inset:0;opacity:.22;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.scene-veil{background:linear-gradient(96deg,rgba(247,242,231,.7) 0%,rgba(247,242,231,.44) 20%,rgba(247,242,231,.14) 34%,rgba(247,242,231,0) 46%)}
+.scene-vignette{background:radial-gradient(132% 112% at 50% 42%,rgba(92,76,50,0) 62%,rgba(92,76,50,.05) 84%,rgba(78,64,42,.13) 100%)}
+.scene-vignette:after{content:'';position:absolute;inset:0;opacity:.14;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
 #room.leaving .scene-veil,#room.leaving .scene-vignette{opacity:0;transition:opacity .35s}
 .scene-failed .scene-vignette,.scene-failed .scene-veil{display:none}
 /* both of these sit under the veil layer without an explicit z-index */
 .room-number,.room-footer{z-index:2}
-.identity-line{color:#39402f}
-.location,.room-number{color:#5b6252}
-.eyebrow{color:#5d6455}
-.intro h1{text-shadow:0 2px 30px rgba(236,236,228,.92)}
-.intro p{color:#4b5145;text-shadow:0 1px 16px rgba(236,236,228,.95)}
-.tiny{color:#59604f;text-shadow:0 1px 14px rgba(236,236,228,.95)}
+.identity-line{color:#2c3126}
+.location,.room-number{color:#585c4c}
+.room-number{text-shadow:0 1px 16px rgba(247,242,231,.95)}
+.eyebrow{color:#575c4b}
+.intro h1{color:#191c16;text-shadow:0 2px 34px rgba(247,242,231,.85)}
+.intro p{color:#3e4338;text-shadow:0 1px 18px rgba(247,242,231,.9)}
+.tiny{color:#565b4b;text-shadow:0 1px 16px rgba(247,242,231,.92)}
 /* ---- The one button that has to feel expensive ---- */
-.primary{position:relative;overflow:hidden;border-radius:10px;border:1px solid #3d4834;background:linear-gradient(158deg,#333c2b,#1e251b);box-shadow:0 1px 2px rgba(40,46,34,.2),0 14px 30px -14px rgba(40,46,34,.6);transition:transform .38s cubic-bezier(.2,.8,.25,1),box-shadow .38s ease,background .38s ease}
+.primary{position:relative;overflow:hidden;border-radius:16px;padding:21px 26px;gap:52px;font-size:15px;border:1px solid #3a4632;background:linear-gradient(158deg,#2e3a26,#1a2216);box-shadow:0 2px 4px rgba(40,46,34,.18),0 18px 36px -16px rgba(40,46,34,.55);transition:transform .38s cubic-bezier(.2,.8,.25,1),box-shadow .38s ease,background .38s ease}
 .primary:hover{background:linear-gradient(158deg,#3e4a32,#252e1f);transform:translateY(-2px);box-shadow:0 2px 4px rgba(40,46,34,.22),0 22px 40px -16px rgba(40,46,34,.66);filter:none}
 .primary:active{transform:translateY(0);transition-duration:.09s}
 .primary span{transition:transform .38s cubic-bezier(.2,.8,.25,1)}
@@ -35,15 +36,18 @@
 .text-button:hover{color:#2e3925;filter:none}
 .menu-right button[aria-pressed=true]{color:#4b6127}
 .menu-right button,.menubar b{white-space:nowrap}
-@media(max-width:900px) and (min-aspect-ratio:1/1){.scene-veil{background:linear-gradient(94deg,rgba(236,236,228,.97) 0%,rgba(236,236,228,.92) 22%,rgba(236,236,228,.55) 34%,rgba(236,236,228,0) 46%),linear-gradient(180deg,rgba(236,236,228,.82) 0%,rgba(236,236,228,0) 15%)}
+@media(max-width:900px) and (min-aspect-ratio:1/1){.scene-veil{background:linear-gradient(94deg,rgba(247,242,231,.74) 0%,rgba(247,242,231,.5) 24%,rgba(247,242,231,.18) 38%,rgba(247,242,231,0) 50%)}
 }
 /* Portrait: the room reframes itself below the copy, so the veil goes horizontal too. */
-@media(max-aspect-ratio:1/1){.intro{top:18.5%;width:min(470px,calc(100% - 8.4%))}
+@media(max-aspect-ratio:1/1){.intro{top:14.5%;width:min(470px,calc(100% - 8.4%))}
+.intro h1{margin:16px 0 15px}
+.primary{margin-top:22px}
+.tiny{margin-top:14px}
 .intro h1{font-size:clamp(38px,7vw,60px)}
-.scene-veil{background:linear-gradient(180deg,rgba(236,236,228,.97) 0%,rgba(236,236,228,.96) 34%,rgba(236,236,228,.88) 44%,rgba(236,236,228,.62) 54%,rgba(236,236,228,.28) 62%,rgba(236,236,228,.08) 68%,rgba(236,236,228,0) 74%)}
-.scene-vignette{background:radial-gradient(120% 80% at 50% 74%,rgba(84,91,72,0) 46%,rgba(84,91,72,.08) 80%,rgba(68,74,58,.19) 100%)}
+.scene-veil{background:linear-gradient(180deg,rgba(247,242,231,.3) 0%,rgba(247,242,231,.24) 28%,rgba(247,242,231,.12) 42%,rgba(247,242,231,0) 56%)}
+.scene-vignette{background:radial-gradient(124% 86% at 50% 66%,rgba(92,76,50,0) 58%,rgba(92,76,50,.05) 84%,rgba(78,64,42,.13) 100%)}
 }
-@media(max-width:650px){.intro{top:18.5%}
+@media(max-width:650px){.intro{top:14.5%}
 #haptics{display:none}   /* the room footer already carries this toggle */
 .intro h1{font-size:min(46px,12.4vw);letter-spacing:-2.2px}
 .intro p{max-width:320px;font-size:15.5px}
@@ -53404,13 +53408,13 @@ try{
 /* ---------------------------------------------------------------
    Quality tier. Phones and low-core machines get lighter geometry,
    smaller shadow maps and a slower frame budget; everything else
-   gets the full studio treatment.
+   gets the full treatment.
 ----------------------------------------------------------------*/
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const coarse=matchMedia('(pointer: coarse)').matches;
 const cores=navigator.hardwareConcurrency||4;
 const tier=coarse?(cores<=4?0:1):(cores<=4?1:2);
-const ARC=[1,2,3][tier], SHADOW=[1024,1536,2048][tier], MAXDPR=[1.6,1.8,2][tier], STEP=[30,22,16][tier];
+const ARC=[1,2,3][tier], SHADOW=[768,1536,2048][tier], MAXDPR=[1.6,1.8,2][tier], STEP=[30,22,16][tier];
 const SEG=[20,28,36][tier], BALL=[16,24,32][tier];
 const FANCY=tier===2;   // clearcoat and sheen are the priciest shader branches
 const RICH=tier>0;      // environment reflections and the extra fill lights
@@ -53422,43 +53426,39 @@ renderer.shadowMap.enabled=true;
 renderer.shadowMap.type=RICH?THREE.PCFSoftShadowMap:THREE.PCFShadowMap;
 renderer.outputColorSpace=THREE.SRGBColorSpace;
 renderer.toneMapping=THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure=.94;
+renderer.toneMappingExposure=.92;
 host.append(renderer.domElement);
 const aniso=Math.min(8,renderer.capabilities.getMaxAnisotropy());
 
 const scene=new THREE.Scene();
-scene.background=new THREE.Color('#e9e8de');
-scene.fog=new THREE.Fog('#e6e5da',48,120);
-const camera=new THREE.PerspectiveCamera(34,innerWidth/innerHeight,.1,140);
+scene.background=new THREE.Color('#ece5d6');
+const camera=new THREE.PerspectiveCamera(46,innerWidth/innerHeight,.1,90);
 const roomGroup=new THREE.Group();scene.add(roomGroup);
 
 /* ---------------------------------------------------------------
-   A tiny studio, rendered once into an environment map. Every
-   material then picks up real reflections instead of flat shading —
-   this is most of the difference between "3D shapes" and "a render".
+   Environment map: a warm afternoon room. Everything reflects it,
+   which is what stops the props reading as flat coloured shapes.
 ----------------------------------------------------------------*/
 function studio(){
  const s=new THREE.Scene(), cube=new THREE.BoxGeometry();
  const glow=(hex,i)=>new THREE.MeshBasicMaterial({color:new THREE.Color(hex).multiplyScalar(i)});
  const put=(m,x,y,z,sx,sy,sz)=>{const o=new THREE.Mesh(cube,m);o.position.set(x,y,z);o.scale.set(sx,sy,sz);s.add(o)};
- put(new THREE.MeshBasicMaterial({color:new THREE.Color('#e7e7dc'),side:THREE.BackSide}),0,0,0,34,22,34);
- put(glow('#f4ead2',.85),0,-10.4,0,28,.3,28);  // warm floor bounce
- put(glow('#fff4dc',5.2),-7,9.4,7,8,.4,8);     // key softbox, front left
- put(glow('#e2ecff',1.9),10,4,-4,.4,9,12);     // cool fill from the right
- put(glow('#ffffff',2.2),0,9.8,-9,12,.4,5);    // rim from behind
- put(glow('#f6f2e4',1.1),-11,3,-2,.4,8,10);    // soft left wall
+ put(new THREE.MeshBasicMaterial({color:new THREE.Color('#d8cfba').multiplyScalar(.34),side:THREE.BackSide}),0,0,0,30,20,30);
+ put(glow('#f6ead0',.8),0,-9.4,0,26,.3,26);    // sunlit floor bounce
+ put(glow('#ffedc4',5.5),11,3.5,4,.4,9,11);    // the window, hard right
+ put(glow('#fff6e2',1.5),0,9,2,14,.4,10);      // ceiling
+ put(glow('#dfe8f4',1.3),-11,4,-2,.4,9,11);    // cool bounce off the far wall
  return s;
 }
 if(RICH){
  const pmrem=new THREE.PMREMGenerator(renderer);
- scene.environment=pmrem.fromScene(studio(),.028).texture;
+ scene.environment=pmrem.fromScene(studio(),.03).texture;
  pmrem.dispose();
 }
 
 /* ---------------------------------------------------------------
-   Geometry helpers. Nothing in a good render has a razor-sharp
-   edge — rounded boxes catch a highlight along every corner, which
-   is what makes plastic read as moulded plastic.
+   Geometry helpers. Nothing real has a razor-sharp edge — rounded
+   boxes catch a highlight along every corner.
 ----------------------------------------------------------------*/
 const geoCache=new Map();
 function rbGeo(w,h,d,r,arc=ARC){
@@ -53516,10 +53516,14 @@ function lathe(points,m,x,y,z,seg=SEG+8,parent=roomGroup){
  const o=new THREE.Mesh(new THREE.LatheGeometry(points.map(p=>new THREE.Vector2(p[0],p[1])),seg),m);
  o.position.set(x,y,z);o.castShadow=true;o.receiveShadow=true;parent.add(o);return o;
 }
+function plane(w,h,m,x,y,z,parent=roomGroup){
+ const o=new THREE.Mesh(new THREE.PlaneGeometry(w,h),m);
+ o.position.set(x,y,z);parent.add(o);return o;
+}
 
 /* ---------------------------------------------------------------
-   Procedural textures — grain, micro-roughness, soft shadow blobs.
-   All drawn on canvas so the page still makes zero network requests.
+   Procedural textures. Everything is drawn on canvas, so the page
+   still makes zero network requests.
 ----------------------------------------------------------------*/
 function canvasTex(w,h,paint,repeat){
  const c=document.createElement('canvas');c.width=w;c.height=h;
@@ -53529,25 +53533,36 @@ function canvasTex(w,h,paint,repeat){
  if(repeat){t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(repeat[0],repeat[1])}
  return t;
 }
-const woodMap=canvasTex(512,512,(g,w,h)=>{
- g.fillStyle='#b0996d';g.fillRect(0,0,w,h);
- for(let i=0;i<150;i++){
-  const y=Math.random()*h, dark=Math.random()<.62;
-  g.strokeStyle=dark?'rgba(96,74,44,'+(.03+Math.random()*.07)+')':'rgba(226,208,172,'+(.03+Math.random()*.06)+')';
-  g.lineWidth=.5+Math.random()*2.4;g.beginPath();
-  for(let x=0;x<=w;x+=14){
-   const yy=y+Math.sin(x*.011+i)*7+Math.sin(x*.043+i*2.3)*2.2;
+const MONO='"Courier New",monospace';
+const SANS='Arial,Helvetica,sans-serif';
+
+const plasterMap=canvasTex(512,512,(g,w,h)=>{
+ g.fillStyle='#f0ebe0';g.fillRect(0,0,w,h);
+ for(let i=0;i<2600;i++){                       // troweled plaster, not flat paint
+  const x=Math.random()*w,y=Math.random()*h,r=2+Math.random()*13;
+  g.fillStyle='rgba('+(Math.random()<.5?'214,206,190':'255,253,246')+','+(.04+Math.random()*.07)+')';
+  g.beginPath();g.ellipse(x,y,r,r*(.4+Math.random()*.7),Math.random()*3,0,7);g.fill();
+ }
+},[2.4,1.6]);
+const woodMap=canvasTex(1024,512,(g,w,h)=>{
+ g.fillStyle='#a9764a';g.fillRect(0,0,w,h);
+ for(let i=0;i<230;i++){
+  const y=Math.random()*h, dark=Math.random()<.6;
+  g.strokeStyle=dark?'rgba(58,34,16,'+(.05+Math.random()*.13)+')':'rgba(214,166,116,'+(.04+Math.random()*.11)+')';
+  g.lineWidth=.6+Math.random()*3.1;g.beginPath();
+  for(let x=0;x<=w;x+=12){
+   const yy=y+Math.sin(x*.006+i)*9+Math.sin(x*.028+i*2.1)*2.6;
    x?g.lineTo(x,yy):g.moveTo(x,yy);
   }
   g.stroke();
  }
- for(let i=0;i<7;i++){ // a few soft knots keep the grain from looking printed
-  const x=Math.random()*w,y=Math.random()*h,r=8+Math.random()*16;
+ for(let i=0;i<9;i++){                          // knots keep grain from looking printed
+  const x=Math.random()*w,y=Math.random()*h,r=10+Math.random()*24;
   const rad=g.createRadialGradient(x,y,1,x,y,r);
-  rad.addColorStop(0,'rgba(104,80,48,.22)');rad.addColorStop(1,'rgba(104,80,48,0)');
+  rad.addColorStop(0,'rgba(52,29,12,.3)');rad.addColorStop(1,'rgba(52,29,12,0)');
   g.fillStyle=rad;g.beginPath();g.arc(x,y,r,0,7);g.fill();
  }
-},[1.6,1]);
+});
 const microMap=canvasTex(256,256,(g,w,h)=>{
  const img=g.createImageData(w,h);
  for(let i=0;i<img.data.length;i+=4){
@@ -53556,367 +53571,470 @@ const microMap=canvasTex(256,256,(g,w,h)=>{
  }
  g.putImageData(img,0,0);
 },[7,7]);
-const weaveMap=canvasTex(256,256,(g,w,h)=>{
- g.fillStyle='#c9c9c9';g.fillRect(0,0,w,h);
- for(let y=0;y<h;y+=4){g.fillStyle='rgba(255,255,255,.34)';g.fillRect(0,y,w,2)}
- for(let x=0;x<w;x+=4){g.fillStyle='rgba(0,0,0,.16)';g.fillRect(x,0,2,h)}
-},[9,9]);
+const rugMap=canvasTex(512,512,(g,w,h)=>{
+ g.fillStyle='#ded4c0';g.fillRect(0,0,w,h);
+ for(let y=0;y<h;y+=3){g.fillStyle='rgba(255,252,244,.5)';g.fillRect(0,y,w,1.4)}
+ for(let x=0;x<w;x+=3){g.fillStyle='rgba(150,136,112,.2)';g.fillRect(x,0,1.4,h)}
+ for(let i=0;i<1500;i++){                        // slubs in the weave
+  g.fillStyle='rgba('+(Math.random()<.5?'118,104,82':'255,255,248')+','+(.06+Math.random()*.16)+')';
+  g.fillRect(Math.random()*w,Math.random()*h,2+Math.random()*7,1.6);
+ }
+},[3,3]);
+const leatherMap=canvasTex(256,256,(g,w,h)=>{
+ g.fillStyle='#cfcfcf';g.fillRect(0,0,w,h);
+ for(let i=0;i<1800;i++){
+  const x=Math.random()*w,y=Math.random()*h,r=2+Math.random()*5;
+  g.fillStyle='rgba('+(Math.random()<.5?'90,90,90':'255,255,255')+','+(.06+Math.random()*.12)+')';
+  g.beginPath();g.arc(x,y,r,0,7);g.fill();
+ }
+},[6,6]);
 const blobTex=canvasTex(128,128,(g,w)=>{
  const r=g.createRadialGradient(w/2,w/2,0,w/2,w/2,w/2);
- r.addColorStop(0,'rgba(52,58,46,.62)');r.addColorStop(.5,'rgba(52,58,46,.24)');
- r.addColorStop(.82,'rgba(52,58,46,.05)');r.addColorStop(1,'rgba(52,58,46,0)');
+ r.addColorStop(0,'rgba(56,48,36,.6)');r.addColorStop(.5,'rgba(56,48,36,.24)');
+ r.addColorStop(.82,'rgba(56,48,36,.05)');r.addColorStop(1,'rgba(56,48,36,0)');
  g.fillStyle=r;g.fillRect(0,0,w,w);
 });
-function contact(w,d,x,y,z,opacity=1,parent=roomGroup,rot=0){
+function contact(w,d,x,y,z,opacity=1,parent=roomGroup){
+ if(!RICH)return null;
  const m=new THREE.Mesh(new THREE.PlaneGeometry(w,d),new THREE.MeshBasicMaterial({map:blobTex,transparent:true,opacity,depthWrite:false,toneMapped:false}));
- m.rotation.set(-Math.PI/2,0,rot);m.position.set(x,y,z);m.renderOrder=-1;parent.add(m);return m;
-}
-function glowPlane(w,d,tex,x,y,z,opacity){
- const m=new THREE.Mesh(new THREE.PlaneGeometry(w,d),new THREE.MeshBasicMaterial({map:tex,transparent:true,opacity,depthWrite:false,blending:THREE.AdditiveBlending,toneMapped:false}));
- m.rotation.x=-Math.PI/2;m.position.set(x,y,z);m.renderOrder=1;roomGroup.add(m);return m;
+ m.rotation.x=-Math.PI/2;m.position.set(x,y,z);m.renderOrder=-1;parent.add(m);return m;
 }
 
 /* ---------------------------------------------------------------
    Materials.
 ----------------------------------------------------------------*/
-// One material factory, three budgets: the full physical shader where there is
-// power for it, plain standard shading where there isn't.
 const phys=o=>{
  if(FANCY)return new THREE.MeshPhysicalMaterial(o);
  const {clearcoat,clearcoatRoughness,sheen,sheenRoughness,sheenColor,...rest}=o;
  if(!RICH)delete rest.roughnessMap;
  return new THREE.MeshStandardMaterial(rest);
 };
-const shell=phys({color:'#d3ceb5',roughness:.42,clearcoat:.5,clearcoatRoughness:.4,roughnessMap:microMap,envMapIntensity:.5});
-const shellWarm=phys({color:'#ded8bd',roughness:.38,clearcoat:.55,clearcoatRoughness:.38,roughnessMap:microMap,envMapIntensity:.55});
-const edge=phys({color:'#b4af97',roughness:.48,clearcoat:.35,clearcoatRoughness:.45,envMapIntensity:.45});
-const dark=phys({color:'#2b332b',roughness:.42,clearcoat:.45,clearcoatRoughness:.45,envMapIntensity:.5});
-const green=phys({color:'#5e6c46',roughness:.48,clearcoat:.35,clearcoatRoughness:.45,envMapIntensity:.5});
-const greenLite=phys({color:'#6d7b52',roughness:.5,clearcoat:.3,clearcoatRoughness:.45,envMapIntensity:.5});
-const fabric=phys({color:'#79885d',roughness:.94,sheen:.6,sheenRoughness:.6,sheenColor:new THREE.Color('#c8d4a9'),roughnessMap:weaveMap,envMapIntensity:.35});
-const metal=phys({color:'#8d948a',roughness:.3,metalness:.9,envMapIntensity:.95});
-const metalDark=phys({color:'#525a51',roughness:.36,metalness:.82,envMapIntensity:.85});
-const paper=phys({color:'#e6e2d3',roughness:.86,envMapIntensity:.4});
-const rubber=phys({color:'#2b332c',roughness:.82,envMapIntensity:.4});
-const deskTop=phys({color:'#ab8f61',map:woodMap,roughness:.4,clearcoat:.5,clearcoatRoughness:.4,envMapIntensity:.45});
-const deskEdge=phys({color:'#6a563a',map:woodMap,roughness:.6,envMapIntensity:.32});
+const wall=phys({color:'#e7dfcd',map:plasterMap,roughness:.97,envMapIntensity:.3});
+const floorMat=phys({color:'#bdb097',roughness:.72,roughnessMap:microMap,envMapIntensity:.3});
+const rugMat=phys({color:'#dfd2b4',map:rugMap,roughness:.98,sheen:.35,sheenColor:new THREE.Color('#fff4dd'),envMapIntensity:.22});
+const walnut=phys({color:'#e2cfb4',map:woodMap,roughness:.4,clearcoat:.5,clearcoatRoughness:.36,envMapIntensity:.6});
+const blackMetal=phys({color:'#23241f',roughness:.42,metalness:.55,envMapIntensity:.7});
+const olive=phys({color:'#5f6c46',roughness:.52,clearcoat:.3,clearcoatRoughness:.45,envMapIntensity:.55});
+const oliveDeep=phys({color:'#515c3c',roughness:.55,envMapIntensity:.5});
+const oliveLeather=phys({color:'#67744a',roughness:.62,roughnessMap:leatherMap,clearcoat:.28,clearcoatRoughness:.55,envMapIntensity:.55});
+const beige=phys({color:'#d3c9b0',roughness:.44,clearcoat:.45,clearcoatRoughness:.4,roughnessMap:microMap,envMapIntensity:.55});
+const beigeLite=phys({color:'#ded5be',roughness:.42,clearcoat:.45,clearcoatRoughness:.38,envMapIntensity:.6});
+const beigeDark=phys({color:'#b0a892',roughness:.5,envMapIntensity:.45});
+const chrome=phys({color:'#9aa0a0',roughness:.3,metalness:.9,envMapIntensity:1.1});
+const paperMat=phys({color:'#f0ece1',roughness:.9,envMapIntensity:.3});
+const ceramic=phys({color:'#f4f1e8',roughness:.16,clearcoat:.95,clearcoatRoughness:.1,envMapIntensity:1.1});
+const soil=phys({color:'#3c3226',roughness:.98,roughnessMap:microMap,envMapIntensity:.2});
+const darkPlastic=phys({color:'#262823',roughness:.5,envMapIntensity:.4});
 
 /* ---------------------------------------------------------------
-   Floor and an infinity-cove backdrop, so the desk sits in a
-   studio rather than floating in a white void.
+   The room: one back wall, a floor and a rug. Nothing else is ever
+   in frame, so nothing else gets built.
 ----------------------------------------------------------------*/
-const floor=new THREE.Mesh(new THREE.PlaneGeometry(140,140),phys({color:'#d9d8ca',roughness:.7,metalness:0,roughnessMap:microMap,envMapIntensity:.32}));
-floor.rotation.x=-Math.PI/2;floor.receiveShadow=true;scene.add(floor);
-const coveProfile=[[34,-.6]];
-for(let i=0;i<=12;i++){const a=i/12*Math.PI/2;coveProfile.push([42-8*Math.cos(a),8*Math.sin(a)])}
-coveProfile.push([42,54]);
-const coveMap=canvasTex(8,256,(g,w,h)=>{
- const grad=g.createLinearGradient(0,h,0,0);   // the light falloff is baked in
- grad.addColorStop(0,'#d3d2c4');grad.addColorStop(.28,'#e2e1d4');grad.addColorStop(.72,'#eeede3');grad.addColorStop(1,'#f7f6ec');
- g.fillStyle=grad;g.fillRect(0,0,w,h);
-});
-const cove=lathe(coveProfile,new THREE.MeshBasicMaterial({color:'#ffffff',map:coveMap,side:THREE.BackSide,fog:true}),0,0,0,tier?56:32,scene);
-cove.castShadow=false;cove.receiveShadow=false;
-{// LatheGeometry spreads v by point index, which crushed the whole gradient
- // into the fillet. Re-map it to real height so the falloff is even.
- const pos=cove.geometry.attributes.position, uv=cove.geometry.attributes.uv;
- for(let i=0;i<pos.count;i++)uv.setY(i,Math.min(1,Math.max(0,pos.getY(i)/26)));
- uv.needsUpdate=true;}
+const WALL_Z=-2.15;
+const wallMesh=plane(46,30,wall,0,9,WALL_Z,scene);
+wallMesh.receiveShadow=true;
+const floor=plane(48,40,floorMat,0,0,WALL_Z+20,scene);
+floor.rotation.x=-Math.PI/2;floor.receiveShadow=true;
+plane(.3,30,phys({color:'#e8e2d5',roughness:.9}),0,9,WALL_Z-.02,scene); // stops any seam at the edges
+const skirting=rb(46,.42,.1,phys({color:'#f4efe6',roughness:.85,envMapIntensity:.3}),0,.21,WALL_Z+.06,.02,scene);
+skirting.castShadow=false;
+const rug=rb(10.6,.07,6.6,rugMat,-.15,.035,2.2,.08,scene);
+rug.castShadow=false;rug.receiveShadow=true;
 
 /* ---------------------------------------------------------------
-   Lighting. Sun through an unseen window, a cool bounce to keep the
-   shadows from going muddy, and the warm pool it throws on the floor.
+   Light. Late-afternoon sun coming through a slatted blind on the
+   right — a spotlight carrying the window as a projected cookie, so
+   the pattern lands correctly on the wall, the rug and the desk.
 ----------------------------------------------------------------*/
-scene.add(new THREE.HemisphereLight('#fbfbef','#95a084',RICH?.46:1.5));
-const sun=new THREE.DirectionalLight('#fff2d4',3.6);
-sun.position.set(-4.6,11.5,7.6);sun.castShadow=true;
-sun.shadow.mapSize.set(SHADOW,SHADOW);
-sun.shadow.camera.left=-7.5;sun.shadow.camera.right=7.5;
-sun.shadow.camera.top=7;sun.shadow.camera.bottom=-5;
-sun.shadow.camera.near=1;sun.shadow.camera.far=28;
-sun.shadow.normalBias=.028;sun.shadow.bias=-.00015;sun.shadow.radius=RICH?3:1;
-scene.add(sun);
-if(RICH){const fill=new THREE.DirectionalLight('#d5e4f7',.36);fill.position.set(7.5,4.5,-6);scene.add(fill)}
-scene.add(new THREE.AmbientLight('#dfe6d8',.1));
-
-const poolTex=canvasTex(256,256,(g,w,h)=>{
- g.clearRect(0,0,w,h);
- g.filter='blur(9px)';
- g.fillStyle='rgba(255,236,196,.85)';
- g.fillRect(38,28,180,200);
- g.filter='blur(6px)';
- g.globalCompositeOperation='destination-out';
- g.fillStyle='rgba(0,0,0,1)';
- g.fillRect(122,28,12,200);g.fillRect(38,118,180,11);
- g.globalCompositeOperation='source-over';
-});
-poolTex.colorSpace=THREE.SRGBColorSpace;
-const sunPool=glowPlane(6.2,5.2,poolTex,2.5,.012,3.3,.2);
-sunPool.rotation.z=-.42;
-
-/* ---------------------------------------------------------------
-   Desk, drawers and the machine on top of it.
-----------------------------------------------------------------*/
-contact(9.6,6.2,-.1,.006,.15,.85);
-rb(5.3,.085,2.58,deskTop,0,2.652,0,.022);        // laminated top
-rb(5.16,.075,2.44,deskEdge,0,2.585,0,.014);      // darker apron under it
-rb(4.9,.05,2.2,deskEdge,0,2.52,0,.012);
-for(const x of [-2.36,2.36])for(const z of [-1.03,1.03]){
- rb(.095,2.53,.095,dark,x,1.265,z,.018);
- cyl(.062,.052,.03,metalDark,x,.02,z);
-}
-// drawer stack
-rb(1.24,1.06,2.0,green,-1.61,2.0,-.05,.035);
-for(let i=0;i<2;i++){
- rb(1.14,.44,.055,greenLite,-1.61,1.77+i*.49,.985,.026);
- rb(1.0,.05,.075,metalDark,-1.61,1.81+i*.49,1.02,.022);
-}
-contact(2.4,3.0,-1.61,.008,-.05,.7);
-
-// tower / floppy drive
-rb(1.9,.34,1.36,shell,.24,2.925,-.25,.035);
-rb(1.86,.03,1.32,edge,.24,3.1,-.25,.012);
-rb(.7,.05,.024,dark,.7,2.965,.425);
-rb(.66,.028,.03,edge,.7,3.03,.432,.008);
-rb(.13,.075,.022,phys({color:'#9dbc60',roughness:.35,emissive:'#6d8a33',emissiveIntensity:.5}),-.45,2.94,.425,.008);
-for(let i=0;i<7;i++)rb(.5,.012,.018,edge,-.28,2.99+i*.028,.428,.005);
-// monitor riser
-cyl(.3,.34,.26,edge,.24,3.19,-.3);
-rb(.96,.07,.7,shell,.24,3.085,-.29,.025);
-
-const monitor=new THREE.Group();monitor.position.set(.24,4.03,-.33);roomGroup.add(monitor);
-rb(1.76,1.5,.86,shell,0,0,-.1,.09,monitor);
-rb(1.62,1.34,.06,shellWarm,0,.04,.31,.06,monitor);   // front bezel
-rb(1.56,1.2,.05,dark,0,.075,.33,.028,monitor);       // dark surround behind the glass
-rb(1.52,.09,.06,edge,0,.665,.35,.025,monitor);
-for(let i=0;i<9;i++)rb(.02,.5,.012,edge,.72,-.02,-.5+i*.03,.004,monitor); // vents (side)
-
-/* Screen: a gently bulged CRT face, drawn once at high resolution. */
-const SW=1280,SH=960;
-const screenCanvas=document.createElement('canvas');screenCanvas.width=SW;screenCanvas.height=SH;
-const ctx=screenCanvas.getContext('2d');
-function paintScreen(){
- ctx.fillStyle='#22392c';ctx.fillRect(0,0,SW,SH);
- const wash=ctx.createRadialGradient(SW*.4,SH*.36,40,SW*.5,SH*.5,SW*.72);
- wash.addColorStop(0,'rgba(126,186,112,.4)');wash.addColorStop(1,'rgba(22,42,30,.16)');
- ctx.fillStyle=wash;ctx.fillRect(0,0,SW,SH);
- ctx.fillStyle='#cfdcaf';ctx.fillRect(0,0,SW,54);
- ctx.fillStyle='#26382a';ctx.font='bold 27px "Courier New",monospace';
- ctx.fillText('S.   SHASHANK OS',30,37);
- ctx.font='25px "Courier New",monospace';ctx.fillText('PERSONAL WORKSPACE',908,37);
- ctx.shadowColor='rgba(190,235,140,.75)';ctx.shadowBlur=26;
- ctx.fillStyle='#eaf9c2';ctx.font='bold 124px "Courier New",monospace';
- ctx.fillText('hello,',92,312);ctx.fillText('curious human.',92,456);
- ctx.shadowBlur=12;
- ctx.fillStyle='#b7d3a2';ctx.font='33px "Courier New",monospace';
- ctx.fillText('A builder’s mind. A learner’s heart.',98,552);
- ctx.shadowBlur=0;
- ctx.fillStyle='#d4ed80';ctx.fillRect(98,660,498,86);
- ctx.fillStyle='#243a25';ctx.font='bold 30px "Courier New",monospace';
- ctx.fillText('CLICK TO EXPLORE  ↗',132,714);
- ctx.shadowColor='rgba(170,215,130,.6)';ctx.shadowBlur=14;
- ctx.fillStyle='#93ad83';ctx.font='23px "Courier New",monospace';
- ctx.fillText('shashank@workspace:~ $',98,876);
- ctx.shadowBlur=0;
- for(let y=0;y<SH;y+=4){ctx.fillStyle='rgba(0,0,0,.1)';ctx.fillRect(0,y,SW,2)}
- const vig=ctx.createRadialGradient(SW/2,SH/2,SH*.34,SW/2,SH/2,SH*.86);
- vig.addColorStop(0,'rgba(0,0,0,0)');vig.addColorStop(1,'rgba(0,0,0,.17)');
- ctx.fillStyle=vig;ctx.fillRect(0,0,SW,SH);
-}
-paintScreen();
-const cursorX=98+ctx.measureText('shashank@workspace:~ $').width+12;
-const screenTex=new THREE.CanvasTexture(screenCanvas);
-screenTex.colorSpace=THREE.SRGBColorSpace;screenTex.anisotropy=aniso;
-const screenGeo=new THREE.PlaneGeometry(1.44,1.08,20,16);
-{const p=screenGeo.attributes.position;
- for(let i=0;i<p.count;i++){
-  const x=p.getX(i)/.72,y=p.getY(i)/.54;
-  p.setZ(i,(1-x*x*.86)*(1-y*y*.86)*.045);
- }
- screenGeo.computeVertexNormals();}
-const screen=new THREE.Mesh(screenGeo,new THREE.MeshBasicMaterial({map:screenTex,toneMapped:false}));
-screen.position.set(0,.075,.357);monitor.add(screen);
-
-const glareTex=canvasTex(256,256,(g,w,h)=>{
- g.clearRect(0,0,w,h);
- g.save();g.translate(w/2,h/2);g.rotate(-.72);g.filter='blur(15px)';
- const grad=g.createLinearGradient(-70,0,70,0);
- grad.addColorStop(0,'rgba(255,255,255,0)');grad.addColorStop(.5,'rgba(255,255,255,.6)');grad.addColorStop(1,'rgba(255,255,255,0)');
- g.fillStyle=grad;g.fillRect(-150,-190,120,380);
- g.fillStyle='rgba(255,255,255,.3)';g.fillRect(10,-190,34,380);
+// Drawn fully opaque on purpose: a light cookie is read as colour, so any
+// alpha compositing here comes back as murk instead of shadow.
+const blindTex=canvasTex(512,512,(g,w,h)=>{
+ g.fillStyle='#171310';g.fillRect(0,0,w,h);                // outside the window
+ g.save();
+ g.translate(w/2,h/2);g.rotate(-.34);g.translate(-w/2,-h/2);  // blinds run off the horizontal
+ g.filter='blur(2px)';
+ g.fillStyle='#ffffff';g.fillRect(-90,-60,w+180,h+120);    // the opening
+ g.fillStyle='#2a231b';
+ for(let i=-2;i<24;i++)g.fillRect(-90,-40+i*26,w+180,11);  // slats
+ g.fillRect(w*.46,-60,15,h+120);                           // centre mullion
  g.restore();
+ g.filter='blur(26px)';                                    // soft edge to the shaft
+ g.globalCompositeOperation='multiply';
+ const r=g.createRadialGradient(w/2,h/2,h*.2,w/2,h/2,h*.66);
+ r.addColorStop(0,'#ffffff');r.addColorStop(.72,'#e6e0d6');r.addColorStop(1,'#171310');
+ g.fillStyle=r;g.fillRect(0,0,w,h);
+ g.globalCompositeOperation='source-over';g.filter='none';
 });
-const glare=new THREE.Mesh(screenGeo.clone(),new THREE.MeshBasicMaterial({map:glareTex,transparent:true,opacity:.2,depthWrite:false,blending:THREE.AdditiveBlending,toneMapped:false}));
-glare.position.set(0,.075,.363);monitor.add(glare);
+const sun=new THREE.SpotLight('#ffcf97',RICH?44:36,0,.66,.3,1.02);
+sun.position.set(12.4,9.2,6.4);
+sun.target.position.set(-2.4,1.6,-1.4);
+sun.map=blindTex;
+sun.castShadow=true;
+sun.shadow.mapSize.set(SHADOW,SHADOW);
+sun.shadow.camera.near=4;sun.shadow.camera.far=40;
+sun.shadow.normalBias=.03;sun.shadow.bias=-.0002;sun.shadow.radius=RICH?4:1;
+scene.add(sun,sun.target);
 
-const bloomTex=canvasTex(256,256,(g,w)=>{
+scene.add(new THREE.HemisphereLight('#fff5e6','#867c64',RICH?.52:1.5));
+const warmFill=new THREE.DirectionalLight('#ffdcae',.5);warmFill.position.set(9,5,5);scene.add(warmFill);
+const bounce=new THREE.DirectionalLight('#dde6f4',RICH?.28:0);
+bounce.position.set(-7,4,8);if(RICH)scene.add(bounce);
+scene.add(new THREE.AmbientLight('#f2e8d4',.12));
+
+/* ---------------------------------------------------------------
+   Desk: walnut top on slim black posts, olive drawer pedestal left.
+----------------------------------------------------------------*/
+const TOP=2.52;                                  // desk surface height
+rb(5.6,.15,2.6,walnut,0,TOP-.075,-.88,.028);
+for(const x of [-2.62,2.62])for(const z of [-2.02,.26]){
+ rb(.13,TOP-.15,.13,blackMetal,x,(TOP-.15)/2,z,.02);
+}
+rb(5.2,.09,.1,blackMetal,0,.44,.24,.02);         // stretcher rails
+rb(5.2,.09,.1,blackMetal,0,.44,-2,.02);
+contact(9.5,5.4,0,.05,-1,.62,scene);
+
+// pedestal
+const ped=new THREE.Group();ped.position.set(-1.62,0,-1.02);roomGroup.add(ped);
+rb(1.72,2.02,2.12,olive,0,1.32,0,.05,ped);
+for(let i=0;i<3;i++){
+ rb(1.58,.56,.07,oliveDeep,0,.56+i*.62,1.06,.035,ped);
+ rb(.86,.055,.09,blackMetal,0,.56+i*.62,1.11,.025,ped);   // slot pulls
+}
+contact(3,3.2,-1.62,.05,-1.02,.5,scene);
+
+/* ---------------------------------------------------------------
+   The computer. Compact beige CRT — the whole front panel is one
+   drawn texture so the bezel, the rounded glass and the phosphor
+   glow all line up exactly.
+----------------------------------------------------------------*/
+const CW=1024,CH=1024;
+const faceCanvas=document.createElement('canvas');faceCanvas.width=CW;faceCanvas.height=CH;
+const ctx=faceCanvas.getContext('2d');
+function roundRect(g,x,y,w,h,r){
+ g.beginPath();
+ g.moveTo(x+r,y);g.arcTo(x+w,y,x+w,y+h,r);g.arcTo(x+w,y+h,x,y+h,r);
+ g.arcTo(x,y+h,x,y,r);g.arcTo(x,y,x+w,y,r);g.closePath();
+}
+const SX=88,SY=126,SW2=848,SH2=650;              // screen rect inside the face
+function paintFace(){
+ ctx.fillStyle='#d3c9b0';ctx.fillRect(0,0,CW,CH);
+ const sheen=ctx.createLinearGradient(0,0,CW,CH);
+ sheen.addColorStop(0,'rgba(255,255,255,.16)');sheen.addColorStop(.55,'rgba(255,255,255,0)');
+ sheen.addColorStop(1,'rgba(90,80,60,.12)');
+ ctx.fillStyle=sheen;ctx.fillRect(0,0,CW,CH);
+ // recessed well
+ ctx.save();roundRect(ctx,SX-16,SY-16,SW2+32,SH2+32,54);ctx.fillStyle='#b3ab96';ctx.fill();ctx.restore();
+ ctx.save();roundRect(ctx,SX,SY,SW2,SH2,44);ctx.clip();
+ ctx.fillStyle='#22392a';ctx.fillRect(SX,SY,SW2,SH2);
+ const wash=ctx.createRadialGradient(SX+SW2*.42,SY+SH2*.36,30,SX+SW2*.5,SY+SH2*.5,SW2*.72);
+ wash.addColorStop(0,'rgba(122,182,110,.34)');wash.addColorStop(1,'rgba(16,32,22,.34)');
+ ctx.fillStyle=wash;ctx.fillRect(SX,SY,SW2,SH2);
+ ctx.shadowColor='rgba(186,232,140,.8)';ctx.shadowBlur=22;
+ ctx.fillStyle='#e6f7bd';ctx.font='bold 82px '+MONO;
+ ctx.fillText('hello,',SX+56,SY+180);
+ ctx.fillText('curious human.',SX+56,SY+276);
+ ctx.shadowBlur=14;
+ ctx.fillStyle='#a9cf8c';ctx.font='52px '+MONO;
+ ctx.fillText('> make a more',SX+56,SY+428);
+ ctx.fillText('  human internet.',SX+56,SY+492);
+ ctx.shadowBlur=0;
+ for(let y=SY;y<SY+SH2;y+=4){ctx.fillStyle='rgba(0,0,0,.11)';ctx.fillRect(SX,y,SW2,2)}
+ const vig=ctx.createRadialGradient(SX+SW2/2,SY+SH2/2,SH2*.3,SX+SW2/2,SY+SH2/2,SH2*.92);
+ vig.addColorStop(0,'rgba(0,0,0,0)');vig.addColorStop(1,'rgba(0,0,0,.34)');
+ ctx.fillStyle=vig;ctx.fillRect(SX,SY,SW2,SH2);
+ ctx.restore();
+ // chin: badge, slot, power light
+ ctx.fillStyle='#a49c88';ctx.font='22px '+MONO;
+ ctx.fillText('S H A S H A N K   O S',SX+8,SY+SH2+66);
+ roundRect(ctx,SX+SW2-206,SY+SH2+40,200,26,13);ctx.fillStyle='#b4ac97';ctx.fill();
+ roundRect(ctx,SX+4,SY+SH2+108,SW2-8,58,12);ctx.fillStyle='#c6bea9';ctx.fill();
+ roundRect(ctx,SX+18,SY+SH2+124,SW2-320,26,9);ctx.fillStyle='#7f7967';ctx.fill();
+ ctx.beginPath();ctx.arc(SX+SW2-44,SY+SH2+137,14,0,7);ctx.fillStyle='#a8cc6a';ctx.fill();
+}
+paintFace();
+const cursorX=SX+56+ctx.measureText('  human internet.').width+10;
+const faceTex=new THREE.CanvasTexture(faceCanvas);
+faceTex.colorSpace=THREE.SRGBColorSpace;faceTex.anisotropy=aniso;
+
+const monitor=new THREE.Group();monitor.position.set(.72,TOP,-1.32);roomGroup.add(monitor);
+rb(2.12,1.98,1.62,beige,0,.99,-.06,.1,monitor);                       // body
+rb(1.96,1.84,.12,beigeLite,0,1.02,.74,.08,monitor);                    // front panel plate
+const face=plane(1.9,1.78,new THREE.MeshBasicMaterial({map:faceTex,toneMapped:false}),0,1.02,.805,monitor);
+for(let i=0;i<8;i++)rb(.028,.5,.02,beigeDark,.985,1.46,-.42+i*.095,.006,monitor);  // side vents
+rb(1.84,.06,1.46,beigeDark,0,.03,-.06,.02,monitor);                    // foot
+const glowTex=canvasTex(256,256,(g,w)=>{
  const r=g.createRadialGradient(w/2,w/2,0,w/2,w/2,w/2);
- r.addColorStop(0,'rgba(190,232,148,.55)');r.addColorStop(.45,'rgba(150,196,120,.2)');r.addColorStop(1,'rgba(120,170,100,0)');
+ r.addColorStop(0,'rgba(184,232,142,.6)');r.addColorStop(.42,'rgba(150,200,120,.22)');
+ r.addColorStop(1,'rgba(120,170,100,0)');
  g.fillStyle=r;g.fillRect(0,0,w,w);
 });
-const bloom=new THREE.Mesh(new THREE.PlaneGeometry(2.5,2),new THREE.MeshBasicMaterial({map:bloomTex,transparent:true,opacity:.32,depthWrite:false,blending:THREE.AdditiveBlending,toneMapped:false}));
-bloom.position.set(0,.075,.408);monitor.add(bloom);
-
-const screenLight=new THREE.PointLight('#bde592',RICH?1.5:0,4.2,2);
-screenLight.position.set(.24,3.9,.6);
+const bloom=plane(3.5,3.1,new THREE.MeshBasicMaterial({map:glowTex,transparent:true,opacity:.3,depthWrite:false,blending:THREE.AdditiveBlending,toneMapped:false}),0,.96,.78,monitor);
+const screenLight=new THREE.PointLight('#bde592',RICH?1.6:0,4,2);
+screenLight.position.set(.86,TOP+1,-.5);
 if(RICH)roomGroup.add(screenLight);
 
-const powerBtn=cyl(.038,.038,.024,dark,-.66,-.62,.335,monitor);powerBtn.rotation.x=Math.PI/2;
-const powerLed=ball(.023,phys({color:'#b4d986',emissive:'#8ec24f',emissiveIntensity:2.4,roughness:.3}),.65,-.61,.335,1,1,.5,monitor);
-
-/* Keyboard, mouse and mat. */
-rb(1.74,.105,.6,shell,.2,2.795,.77,.024);
-rb(1.66,.02,.52,edge,.2,2.85,.77,.01);
-for(let row=0;row<4;row++)for(let col=0;col<15;col++){
- const key=rb(.088,.03,.076,col===14?green:paper,-.54+col*.106,2.868,.59+row*.105,.012);
- key.rotation.x=-.04;
+// keyboard
+rb(2.16,.13,.76,beige,.5,TOP+.065,-.15,.03);
+rb(2.04,.03,.64,beigeDark,.5,TOP+.132,-.15,.015);
+for(let row=0;row<4;row++)for(let col=0;col<16;col++){
+ const k=rb(.104,.04,.088,col===15?oliveDeep:beigeLite,-.44+col*.124,TOP+.155,-.38+row*.12,.014);
+ k.rotation.x=-.035;
 }
-rb(.49,.028,.066,paper,.17,2.87,1.005,.011);
-rb(.54,.024,.64,phys({color:'#9ea08a',roughness:.92,roughnessMap:weaveMap,envMapIntensity:.4}),1.53,2.78,.79,.02);
-const mouse=ball(.12,shellWarm,1.53,2.845,.77,.78,.62,1.3);
-rb(.032,.035,.11,edge,1.53,2.9,.68,.012);
-contact(2.6,1.5,.3,2.706,.8,.5);
+rb(.62,.038,.078,beigeLite,.52,TOP+.152,.12,.014);
+// mousepad + mouse
+rb(1.02,.028,.78,phys({color:'#69754e',roughness:.95,roughnessMap:leatherMap,envMapIntensity:.25}),2.24,TOP+.014,-.24,.03);
+const mouse=ball(.19,beigeLite,2.24,TOP+.085,-.28,.78,.62,1.24);
+rb(.05,.05,.17,beigeDark,2.24,TOP+.145,-.42,.018);
 
-/* Books, mug, pens — the parts that say somebody works here. */
-const bookColours=['#6d7a55','#a9895c','#43524a'];
-for(let i=0;i<3;i++){
- const g=new THREE.Group();g.position.set(-1.69,2.775+i*.132,.27);g.rotation.y=.1-i*.08;roomGroup.add(g);
- rb(.8,.085,.62,paper,0,.015,0,.008,g);
- rb(.83,.03,.65,phys({color:bookColours[i],roughness:.7,clearcoat:.2,envMapIntensity:.6}),0,.068,0,.012,g);
- rb(.83,.03,.65,phys({color:bookColours[i],roughness:.7,envMapIntensity:.5}),0,-.04,0,.012,g);
-}
-contact(1.6,1.3,-1.69,2.706,.27,.42);
-
-const mugMat=phys({color:'#f0ece0',roughness:.22,clearcoat:.9,clearcoatRoughness:.12,envMapIntensity:1.1});
-lathe([[0,0],[.128,0],[.132,.02],[.121,.16],[.132,.3],[.128,.312],[.114,.3],[.104,.16],[.112,.02],[0,.018]],mugMat,-1.06,2.695,.12);
-const coffee=cyl(.108,.108,.008,phys({color:'#3d2b1c',roughness:.16,clearcoat:1,envMapIntensity:1.4}),-1.06,2.97,.12);
-const handle=new THREE.Mesh(new THREE.TorusGeometry(.088,.026,12,30),mugMat);
-handle.position.set(-.93,2.84,.12);handle.castShadow=true;roomGroup.add(handle);
-contact(.72,.72,-1.06,2.7,.12,.45);
-
-lathe([[0,0],[.13,0],[.135,.02],[.128,.34],[.116,.34],[.12,.02],[0,.016]],phys({color:'#5d6a4c',roughness:.55,envMapIntensity:.7}),-2.06,2.695,.84);
-for(let i=0;i<4;i++){
- const a=i*1.7, pen=cyl(.014,.014,.5,[dark,phys({color:'#c9743f',roughness:.4,clearcoat:.5}),paper,metal][i],-2.06+Math.sin(a)*.05,3.135,.84+Math.cos(a)*.05);
- pen.rotation.z=Math.sin(a)*.14;pen.rotation.x=Math.cos(a)*.14;
-}
-
-/* Task lamp. */
-const lampBase=lathe([[0,0],[.26,0],[.28,.02],[.27,.06],[.06,.07],[0,.07]],metalDark,1.82,2.7,-.68);
-const arm=cyl(.028,.028,.78,metal,1.83,3.11,-.68);arm.rotation.z=-.16;
-const arm2=cyl(.026,.026,.56,metal,1.781,3.748,-.68);arm2.rotation.z=.4;
-const joint=ball(.052,metal,1.888,3.49,-.68);
-ball(.045,metal,1.79,2.74,-.68);
-const shade=lathe([[0,.2],[.05,.21],[.12,.2],[.28,0],[.285,-.02],[.125,.182],[.05,.19],[0,.18]],phys({color:'#7f8d63',roughness:.42,clearcoat:.5,clearcoatRoughness:.35,side:THREE.DoubleSide,envMapIntensity:.9}),1.63,3.9,-.64);
-shade.rotation.z=-.3;
-const bulb=ball(.07,new THREE.MeshBasicMaterial({color:'#fff0c8',toneMapped:false}),1.6,3.79,-.63);
-bulb.castShadow=false;
-const lamp=new THREE.PointLight('#ffdb96',3.4,3.6,2);
-lamp.position.set(1.58,3.74,-.56);roomGroup.add(lamp);
-const lampPoolTex=canvasTex(128,128,(g,w)=>{
- const r=g.createRadialGradient(w/2,w/2,0,w/2,w/2,w/2);
- r.addColorStop(0,'rgba(255,214,140,.75)');r.addColorStop(.55,'rgba(255,206,132,.22)');r.addColorStop(1,'rgba(255,200,130,0)');
- g.fillStyle=r;g.fillRect(0,0,w,w);
+/* ---------------------------------------------------------------
+   Books. The titles are the point, so each spine gets drawn.
+----------------------------------------------------------------*/
+const BOOKS=[
+ ['Meditations','#e9e3d4','#3a3a34'],
+ ['The Power of Now','#dfe5e2','#33413c'],
+ ['The Book of Clarity','#4e6b57','#e9f0e4'],
+ ['Clear Thinking','#e6e0cd','#39382f'],
+ ["Poor Charlie's Almanack",'#2f4a58','#e2ecef'],
+ ['Tiny Experiments','#e3d9c2','#3d372a'],
+ ['How to Fail at Almost Everything','#c8703f','#fbf2e6'],
+ ['The Psychology of Money','#eae4d5','#3a3a30']
+];
+const bookStack=new THREE.Group();bookStack.position.set(-1.5,TOP,-.72);
+bookStack.rotation.y=.045;roomGroup.add(bookStack);
+let by=0;
+BOOKS.forEach(([title,cover,ink],i)=>{
+ const th=.15+(i%3)*.024, wdt=1.78-(i%4)*.06, dep=1.24-(i%3)*.05;
+ const spine=canvasTex(1024,140,(g,w,h)=>{
+  g.fillStyle=cover;g.fillRect(0,0,w,h);
+  g.fillStyle='rgba(0,0,0,.16)';g.fillRect(0,h-14,w,14);      // shadow line under the cover
+  g.fillStyle=ink;g.textBaseline='middle';
+  let size=62;g.font='600 '+size+'px '+SANS;
+  while(g.measureText(title).width>w-90&&size>26){size-=2;g.font='600 '+size+'px '+SANS}
+  g.fillText(title,44,h/2+2);
+ });
+ const m=phys({color:'#ffffff',map:spine,roughness:.74,clearcoat:.16,clearcoatRoughness:.6,envMapIntensity:.35});
+ const b=rb(wdt,th,dep,m,0,by+th/2,0,.014,bookStack);
+ b.rotation.y=(i%3-1)*.018;
+ by+=th;
 });
-glowPlane(2.3,2.0,lampPoolTex,1.56,2.702,-.5,.3);
-contact(1.4,1.2,1.82,2.706,-.68,.4);
+contact(3,2.3,-1.5,TOP+.006,-.72,.42,roomGroup);
 
-/* Cables — the small honest detail that sells the whole thing. */
-function cable(points,radius,m){
- const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(p[0],p[1],p[2])));
- const o=new THREE.Mesh(new THREE.TubeGeometry(curve,tier?26:16,radius,tier?8:6,false),m);
- o.castShadow=true;roomGroup.add(o);return o;
-}
-const cableMat=phys({color:'#3a4239',roughness:.62,envMapIntensity:.5});
-cable([[.24,3.44,-.7],[.3,3.24,-.85],[.5,3.11,-.88],[.72,3.1,-.8]],.021,cableMat);
-cable([[.2,2.79,.49],[.35,2.72,.22],[.5,2.715,-.12],[.62,2.72,-.5],[.67,2.79,-.83]],.018,cableMat);
-contact(.9,.9,-2.06,2.7,.84,.35);
-cable([[1.53,2.79,.63],[1.42,2.715,.36],[1.3,2.71,0],[1.22,2.715,-.45],[1.14,2.78,-.82]],.014,cableMat);
-cable([[1.82,2.72,-.78],[2.06,2.66,-.94],[2.3,2.58,-1.02],[2.37,1.6,-1.06],[2.34,.16,-1.05],[2.1,.03,-1.28],[1.72,.03,-1.5]],.019,cableMat);
+/* ---------------------------------------------------------------
+   Mug, pen cup, lamp.
+----------------------------------------------------------------*/
+const mugTex=canvasTex(1024,512,(g,w,h)=>{
+ g.fillStyle='#f6f3ea';g.fillRect(0,0,w,h);
+ g.fillStyle='#3f4436';g.font='600 48px '+SANS;g.textAlign='center';
+ g.fillText('Good',w*.5,h*.52);
+ g.fillText('Things',w*.5,h*.64);
+ g.fillText('Ahead.',w*.5,h*.76);
+});
+const mugMat=phys({color:'#ffffff',map:mugTex,roughness:.17,clearcoat:.95,clearcoatRoughness:.1,envMapIntensity:1.05});
+lathe([[0,0],[.35,0],[.36,.05],[.352,.18],[.346,.31],[.342,.44],[.346,.57],[.352,.7],[.36,.84],[.355,.87],
+       [.31,.84],[.29,.44],[.31,.05],[0,.04]],mugMat,-.34,TOP,-.2).rotation.y=Math.PI;
+cyl(.29,.29,.02,phys({color:'#33241a',roughness:.14,clearcoat:1,envMapIntensity:1.3}),-.34,TOP+.76,-.2);
+const mugHandle=new THREE.Mesh(new THREE.TorusGeometry(.22,.06,10,26),ceramic);
+mugHandle.position.set(-.69,TOP+.46,-.2);mugHandle.rotation.y=Math.PI/2;
+mugHandle.castShadow=true;roomGroup.add(mugHandle);
+contact(1.6,1.6,-.34,TOP+.006,-.2,.4);
 
-/* Chair. */
-const chair=new THREE.Group();chair.position.set(.73,0,2.26);chair.rotation.y=-.23;roomGroup.add(chair);
-cyl(.072,.086,.86,metal,0,.58,0,chair);
-cyl(.11,.11,.1,metalDark,0,1.02,0,chair);
+lathe([[0,0],[.3,0],[.31,.03],[.3,.72],[.27,.72],[.28,.03],[0,.028]],phys({color:'#6d7a4f',roughness:.42,clearcoat:.5,clearcoatRoughness:.3,envMapIntensity:.75}),-2.5,TOP,-1.52);
+const penCols=['#2c2f2a','#c8703f','#e8e2d0','#7d8a94','#2c2f2a'];
 for(let i=0;i<5;i++){
- const g=new THREE.Group();g.rotation.y=i*Math.PI*2/5;chair.add(g);
- const leg=rb(.09,.08,.74,dark,0,.2,.29,.03,g);leg.rotation.x=.06;
- const wheel=cyl(.078,.078,.09,rubber,0,.105,.62,g);wheel.rotation.z=Math.PI/2;
- cyl(.032,.032,.1,metalDark,0,.105,.62,g).rotation.z=Math.PI/2;
+ const a=i*1.3;
+ const pen=cyl(.03,.028,1.05,phys({color:penCols[i],roughness:.4,clearcoat:.4,envMapIntensity:.6}),-2.5+Math.sin(a)*.11,TOP+.72,-1.52+Math.cos(a)*.11);
+ pen.rotation.z=Math.sin(a)*.16;pen.rotation.x=-Math.cos(a)*.16;
 }
-const seat=rb(1.16,.22,1.02,fabric,0,1.1,0,.1,chair);
-rb(1.06,.06,.92,green,0,.98,0,.05,chair);
-rb(.1,.98,.1,metalDark,0,1.52,.43,.03,chair);
-const back=rb(1.06,.68,.17,fabric,0,1.96,.47,.075,chair);back.rotation.x=-.1;
-for(const x of [-.57,.57]){
- rb(.05,.44,.05,metalDark,x,1.25,.08,.02,chair);
- rb(.11,.075,.5,dark,x,1.48,0,.035,chair);
-}
-contact(2.9,2.9,.73,.007,2.26,.72);
+contact(1.4,1.4,-2.5,TOP+.006,-1.52,.36);
 
-/* Plant. */
-const potMat=phys({color:'#c4c7b2',roughness:.5,clearcoat:.4,clearcoatRoughness:.4,envMapIntensity:.55});
-lathe([[0,0],[.25,0],[.27,.03],[.36,.58],[.385,.62],[.375,.66],[.35,.63],[.33,.58],[.245,.05],[0,.03]],potMat,3.16,.02,-.35);
-cyl(.335,.335,.03,phys({color:'#443c2c',roughness:.98,roughnessMap:microMap,envMapIntensity:.3}),3.16,.62,-.35);
-const leafMat=phys({color:'#57713c',roughness:.56,clearcoat:.35,clearcoatRoughness:.4,sheen:.35,sheenColor:new THREE.Color('#c2d69a'),envMapIntensity:.55,side:THREE.DoubleSide});
-const leafMat2=phys({color:'#688343',roughness:.58,clearcoat:.3,sheen:.35,sheenColor:new THREE.Color('#cbdca4'),envMapIntensity:.55,side:THREE.DoubleSide});
-const stemMat=phys({color:'#5f7443',roughness:.72,envMapIntensity:.4});
+// architect lamp, right of the desk, head angled back over the work
+const lampMat=phys({color:'#5f6d43',roughness:.4,clearcoat:.5,clearcoatRoughness:.3,envMapIntensity:.8});
+const LX=2.46,LZ=-1.62;
+lathe([[0,0],[.46,0],[.48,.04],[.46,.1],[.1,.12],[0,.12]],lampMat,LX,TOP,LZ);
+cyl(.058,.064,1.5,lampMat,LX,TOP+.82,LZ);
+ball(.1,lampMat,LX,TOP+1.55,LZ);
+const arm=cyl(.05,.05,1.35,lampMat,LX-.55,TOP+1.9,LZ+.1);
+arm.rotation.z=1.02;arm.rotation.y=-.16;
+const head=new THREE.Group();
+head.position.set(LX-1.14,TOP+2.24,LZ+.2);
+head.rotation.set(.12,0,-.86);roomGroup.add(head);
+const shadeMat=phys({color:'#6b7a4c',roughness:.4,clearcoat:.55,clearcoatRoughness:.3,side:THREE.DoubleSide,envMapIntensity:.9});
+const cone=new THREE.Mesh(new THREE.CylinderGeometry(.13,.5,.62,SEG+8,1,true),shadeMat);
+cone.position.y=-.14;cone.castShadow=true;head.add(cone);
+ball(.14,shadeMat,0,.16,0,1,.7,1,head);
+const bulb=ball(.16,new THREE.MeshBasicMaterial({color:'#fff0cb',toneMapped:false}),LX-1.44,TOP+1.98,LZ+.24);
+bulb.castShadow=false;
+const lamp=new THREE.PointLight('#ffd08a',RICH?6:3.4,5.2,2);
+lamp.position.set(LX-1.5,TOP+1.94,LZ+.3);roomGroup.add(lamp);
+contact(1.9,1.9,LX,TOP+.006,LZ,.42);
+
+/* ---------------------------------------------------------------
+   The poster on the wall.
+----------------------------------------------------------------*/
+const POSTER=[
+ ['Fast',', lift, sprint, stretch,','and meditate.'],
+ ['Build',', sell, write, create,','invest, and own.'],
+ ['Read',', reflect, love, seek truth,','and ignore society.'],
+ ['Make',' these habits. Say no to','everything else.'],
+ ['Avoid',' debt, jail, addiction,','disgrace, shortcuts, and media.'],
+ ['Relax','. Victory is assured.','']
+];
+const posterTex=canvasTex(760,1000,(g,w,h)=>{
+ g.fillStyle='#f7f4ea';g.fillRect(0,0,w,h);
+ let y=132;
+ g.textBaseline='alphabetic';
+ for(const [lead,rest,tail] of POSTER){
+  g.fillStyle='#22241d';g.font='bold 44px Georgia,serif';
+  const lw=g.measureText(lead).width;
+  g.fillText(lead,74,y);
+  g.fillStyle='#3b3d33';g.font='36px Georgia,serif';
+  g.fillText(rest,74+lw,y);
+  if(tail)g.fillText(tail,74,y+46);
+  y+=tail?142:104;
+ }
+});
+const posterGroup=new THREE.Group();posterGroup.position.set(2.5,5.9,WALL_Z+.06);roomGroup.add(posterGroup);
+plane(2.28,3,new THREE.MeshBasicMaterial({map:posterTex}),0,0,.035,posterGroup);
+const frameMat=phys({color:'#c8ad86',roughness:.55,clearcoat:.3,envMapIntensity:.5});
+rb(2.52,.14,.09,frameMat,0,1.57,.01,.02,posterGroup);
+rb(2.52,.14,.09,frameMat,0,-1.57,.01,.02,posterGroup);
+rb(.14,3.28,.09,frameMat,-1.26,0,.01,.02,posterGroup);
+rb(.14,3.28,.09,frameMat,1.26,0,.01,.02,posterGroup);
+rb(2.4,3.14,.03,phys({color:'#efeade',roughness:.9}),0,0,0,.01,posterGroup);
+
+/* ---------------------------------------------------------------
+   Plants. One tall one on the right, a big one leaning in from the
+   top-right, and a soft out-of-focus frond in the near corner.
+----------------------------------------------------------------*/
+const leafA=phys({color:'#43613a',roughness:.55,clearcoat:.35,clearcoatRoughness:.4,sheen:.35,sheenColor:new THREE.Color('#b8d49a'),envMapIntensity:.65,side:THREE.DoubleSide});
+const leafB=phys({color:'#557a41',roughness:.58,clearcoat:.3,sheen:.35,sheenColor:new THREE.Color('#c6dda6'),envMapIntensity:.65,side:THREE.DoubleSide});
+const stemMat=phys({color:'#4e6b3c',roughness:.72,envMapIntensity:.35});
 const leafGeo=(()=>{
  const s=new THREE.Shape();
  s.moveTo(0,0);
- s.bezierCurveTo(.18,.2,.27,.56,0,.96);
- s.bezierCurveTo(-.27,.56,-.18,.2,0,0);
+ s.bezierCurveTo(.24,.22,.34,.6,0,1.02);
+ s.bezierCurveTo(-.34,.6,-.24,.22,0,0);
  const g=new THREE.ShapeGeometry(s,tier?18:10), p=g.attributes.position;
- for(let i=0;i<p.count;i++){          // curl across and along, so it catches light like a blade
+ for(let i=0;i<p.count;i++){
   const x=p.getX(i),y=p.getY(i);
-  p.setZ(i,-x*x*1.35+(y-.5)*(y-.5)*.24);
+  p.setZ(i,-x*x*1.3+(y-.5)*(y-.5)*.26);          // curl across and along the blade
  }
  g.computeVertexNormals();
  return g;
 })();
-for(let i=0;i<12;i++){
- const a=i*2.3, h=(i<3?.24+i*.08:.52+(i%4)*.3), r=.09+(i%3)*.04;
- const g=new THREE.Group();g.position.set(3.16,0,-.35);g.rotation.y=a;roomGroup.add(g);
- const stem=cyl(.013,.019,h,stemMat,0,.64+h/2,r,g);
- stem.rotation.x=-.22;
- const leaf=new THREE.Mesh(leafGeo,i%2?leafMat:leafMat2);
- leaf.scale.setScalar(.78+(i%4)*.15);
- leaf.position.set(0,.6+h,r+.1);
- leaf.rotation.x=-.5-(i%3)*.16;
- leaf.rotation.z=i%2?.22:-.22;
- leaf.castShadow=true;leaf.receiveShadow=true;
- g.add(leaf);
+function plant(x,z,scale,count,potH){
+ const g=new THREE.Group();g.position.set(x,0,z);roomGroup.add(g);
+ lathe([[0,0],[.5*scale,0],[.54*scale,.05*scale],[.72*scale,potH*.92],[.76*scale,potH],[.74*scale,potH*1.04],
+        [.68*scale,potH],[.5*scale,.08*scale],[0,.06*scale]],ceramic,0,0,0,SEG+8,g);
+ cyl(.66*scale,.66*scale,.05,soil,0,potH*.98,0,g);
+ for(let i=0;i<count;i++){
+  const a=i*2.31, h=(potH+(i%5)*.86+.7)*scale, r=(.18+(i%3)*.11)*scale;
+  const sg=new THREE.Group();sg.rotation.y=a;g.add(sg);
+  const stem=cyl(.035*scale,.05*scale,h,stemMat,0,potH+h/2,r,sg);
+  stem.rotation.x=-.2;
+  const leaf=new THREE.Mesh(leafGeo,i%2?leafA:leafB);
+  leaf.scale.setScalar((.95+(i%4)*.2)*scale);
+  leaf.position.set(0,potH+h-.1,r+.24*scale);
+  leaf.rotation.x=-.46-(i%3)*.14;
+  leaf.rotation.z=i%2?.24:-.24;
+  leaf.castShadow=true;
+  sg.add(leaf);
+ }
+ contact(3.4*scale,3.4*scale,x,.05,z,.5,scene);
+ return g;
 }
-contact(2.2,2.2,3.16,.007,-.35,.6);
+plant(3.75,-1,1.2,13,1.6);                    // tall one, right of the desk
+
+// the big plant leaning in from over the top-right corner
+const hanger=new THREE.Group();hanger.position.set(2.75,9.7,3.4);hanger.rotation.z=.52;hanger.rotation.x=-.16;roomGroup.add(hanger);
+for(let i=0;i<11;i++){
+ const a=-.9+i*.36;
+ const sg=new THREE.Group();sg.rotation.y=a;sg.rotation.z=-.5-((i%3)*.22);hanger.add(sg);
+ cyl(.06,.07,2+(i%3)*.6,stemMat,0,-1,0,sg).rotation.x=.2;
+ const leaf=new THREE.Mesh(leafGeo,i%2?leafA:leafB);
+ leaf.scale.setScalar(2.4+(i%4)*.5);
+ leaf.position.set(0,-2-(i%3)*.6,.2);
+ leaf.rotation.x=2.5;
+ leaf.rotation.z=i%2?.3:-.3;
+ hanger.add(leaf);
+}
+
+// near-corner frond, drawn already blurred so it reads as out of focus
+const frondTex=canvasTex(512,512,(g,w,h)=>{
+ g.clearRect(0,0,w,h);
+ g.filter='blur(7px)';
+ for(let i=0;i<9;i++){
+  const a=-.75+i*.3, len=200+((i*83)%170), cx=70+i*26, cy=h-20;
+  g.save();g.translate(cx,cy);g.rotate(a-1.05);
+  g.fillStyle=['#4a6b3d','#587c46','#3d5a33'][i%3];
+  g.beginPath();g.ellipse(0,-len/2,58,len/2,0,0,7);g.fill();
+  g.restore();
+ }
+});
+const frond=new THREE.Mesh(new THREE.PlaneGeometry(1.5,1.5),
+ new THREE.MeshBasicMaterial({map:frondTex,transparent:true,opacity:.8,depthWrite:false,toneMapped:false}));
+frond.position.set(-.62,-.52,-1.5);   // parented to the camera, so it always frames the corner
+frond.renderOrder=3;
+camera.add(frond);
+scene.add(camera);
+
+/* ---------------------------------------------------------------
+   The chair and the filing cabinet at the left edge.
+----------------------------------------------------------------*/
+const chair=new THREE.Group();chair.position.set(-.2,0,1.02);chair.rotation.y=.2;roomGroup.add(chair);
+for(let i=0;i<5;i++){
+ const g=new THREE.Group();g.rotation.y=i*Math.PI*2/5;chair.add(g);
+ const leg=rb(.14,.11,.94,blackMetal,0,.24,.37,.05,g);leg.rotation.x=.05;
+ const wheel=cyl(.11,.11,.12,darkPlastic,0,.13,.79,g);wheel.rotation.z=Math.PI/2;
+}
+cyl(.14,.18,.82,blackMetal,0,.58,0,chair);
+cyl(.22,.22,.15,darkPlastic,0,1.02,0,chair);
+rb(1.5,.3,1.42,oliveLeather,0,1.24,0,.14,chair);              // seat
+rb(1.38,.1,1.3,darkPlastic,0,1.06,0,.06,chair);
+rb(.18,.52,.2,blackMetal,0,1.5,.68,.06,chair);                // back post
+const back=rb(1.5,1.32,.28,oliveLeather,0,2.24,.72,.13,chair);
+back.rotation.x=-.1;
+
+const cabinet=new THREE.Group();cabinet.position.set(-8.4,0,-1.45);cabinet.rotation.y=.07;roomGroup.add(cabinet);
+rb(2.4,3.1,2.1,olive,0,1.55,0,.06,cabinet);
+for(let i=0;i<3;i++){
+ rb(2.2,.86,.08,oliveDeep,0,.62+i*.98,1.05,.04,cabinet);
+ rb(1.1,.07,.1,blackMetal,0,.62+i*.98,1.1,.03,cabinet);
+}
+contact(4,3.6,-8.4,.05,-1.45,.5,scene);
 
 /* ---------------------------------------------------------------
    Camera, framing and interaction.
 ----------------------------------------------------------------*/
 const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();
 let zoom=false,smoothedX=0,smoothedY=0,targetX=0,targetY=0,frame=0,hovering=false;
-const target=new THREE.Vector3(-.7,2.05,0),near=new THREE.Vector3(.3,4.1,2.45),nearTarget=new THREE.Vector3(.24,4.08,-.1);
-const SPIN=.05,MIN=.14,MAX=1.06,DRAG_MIN=-.85,DRAG_MAX=2.05;
-let RADIUS=14.2,HEIGHT=6.1;
+const target=new THREE.Vector3(.2,2.6,-1),near=new THREE.Vector3(.86,TOP+.95,1.9),nearTarget=new THREE.Vector3(.86,TOP+.9,-1.4);
+// The room has walls now, so the idle move is a slow pan across a narrow
+// arc rather than a full orbit.
+const SPIN=.016,MIN=-.16,MAX=.16,DRAG_MIN=-.42,DRAG_MAX=.42;
+let RADIUS=15.2,HEIGHT=8.2;
 const orbit=(t,out)=>out.set(target.x+Math.sin(t)*RADIUS,HEIGHT,target.z+Math.cos(t)*RADIUS);
 
-// The room reframes itself for the viewport: on a phone the desk drops
-// into the lower half so the headline above it always has clean space.
 function frameCamera(){
  const w=innerWidth,h=innerHeight,a=w/h;
- let fov,shift,tx;
- if(a<.56){fov=42;RADIUS=20.6;HEIGHT=7.3;shift=.22;tx=.15}
- else if(a<.78){fov=40;RADIUS=18.8;HEIGHT=7;shift=.17;tx=.05}
- else if(a<.95){fov=38;RADIUS=17.4;HEIGHT=6.8;shift=.13;tx=-.1}
- else if(a<1.3){fov=35;RADIUS=15.6;HEIGHT=6.4;shift=.06;tx=-.45}
- else if(a<1.8){fov=34;RADIUS=14.2;HEIGHT=6.1;shift=0;tx=-.7}
- else{fov=32;RADIUS=13.8;HEIGHT=5.9;shift=0;tx=-.7}
- target.x=tx;
+ let fov,ox=0,oy=0;
+ if(a<.56){fov=45;RADIUS=15.2;HEIGHT=8.3;oy=-.07}      // portrait: desk drops
+ else if(a<.78){fov=40;RADIUS=15.2;HEIGHT=8.2;oy=-.06}  // clear of the copy
+ else if(a<.95){fov=36;RADIUS=15.2;HEIGHT=8;oy=-.04}
+ else if(a<1.3){fov=33;RADIUS=16;HEIGHT=7.8;ox=.1}
+ else if(a<1.8){fov=30;RADIUS=16.6;HEIGHT=7.7;ox=.12}
+ else{fov=27;RADIUS=17.2;HEIGHT=7.5;ox=.14}
+ const hh=Math.tan(fov*Math.PI/360)*1.5, hw=hh*a;   // keep the frond in the corner
+ frond.position.set(-hw*.86,-hh*.92,-1.5);
+ frond.scale.setScalar(Math.max(hw,hh)*1.6);
+ frond.visible=RICH&&a<1.05;                       // in landscape it just fogs the copy
  camera.fov=fov;camera.aspect=a;
- if(shift)camera.setViewOffset(w,h,0,-h*shift,w,h); else camera.clearViewOffset();
+ if(ox||oy)camera.setViewOffset(w,h,-w*ox,h*oy,w,h); else camera.clearViewOffset();
  camera.updateProjectionMatrix();
 }
 frameCamera();
 
-let theta=.58,dir=1,spinning=!reduced,dragging=false,dragged=0,lastX=0,velocity=0;
+let theta=.02,dir=1,spinning=!reduced,dragging=false,dragged=0,lastX=0,velocity=0;
 const base=new THREE.Vector3(),wanted=new THREE.Vector3();
 orbit(theta,base);camera.position.copy(base);camera.lookAt(target);
 const announce=()=>window.dispatchEvent(new CustomEvent('rotate-state',{detail:{spinning}}));
@@ -53947,12 +54065,12 @@ renderer.domElement.addEventListener('pointercancel',endDrag);
 renderer.domElement.addEventListener('pointermove',e=>{
  if(dragging){
   const dx=e.clientX-lastX;lastX=e.clientX;dragged+=Math.abs(dx);
-  velocity=-dx*.006;
+  velocity=-dx*.0022;
   theta=Math.min(DRAG_MAX,Math.max(DRAG_MIN,theta+velocity));
   start();return;
  }
- targetX=(e.clientX/innerWidth-.5)*.25;
- targetY=(e.clientY/innerHeight-.5)*.15;
+ targetX=(e.clientX/innerWidth-.5)*.34;
+ targetY=(e.clientY/innerHeight-.5)*.2;
  const over=hitMonitor(e.clientX,e.clientY);
  if(over!==hovering){
   hovering=over;
@@ -53975,7 +54093,6 @@ window.addEventListener('resize',()=>{
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)start()});
 announce();
 
-/* Opening move: a short, eased dolly in from further out. */
 let intro=reduced?1:0;
 let progress=0,last=0,clock=0,glow=1,breath=reduced?0:1,lastInput=0;
 const focus=new THREE.Vector3(),eye=new THREE.Vector3();
@@ -53984,7 +54101,7 @@ const easeOut=t=>1-Math.pow(1-t,3);
 function draw(time){
  frame=0;
  if(roomEl.hidden||document.hidden)return;
- // With the room parked — auto-rotate off, nobody touching it — there is
+ // With the room parked — auto-pan off, nobody touching it — there is
  // nothing to animate but the cursor blink, so drop to a trickle.
  const still=breath<.02&&!dragging&&!zoom&&Math.abs(velocity)<1e-4;
  if(time-last<(still?120:STEP)){frame=requestAnimationFrame(draw);return}
@@ -54005,12 +54122,12 @@ function draw(time){
  smoothedY+=(targetY-smoothedY)*.045;
 
  orbit(theta,wanted);
- wanted.multiplyScalar(1+(1-easeOut(intro))*.16);
+ wanted.z+=(1-easeOut(intro))*1.9;
  base.lerp(wanted,dragging?.42:.09);
  eye.copy(base);
  const wantBreath=(spinning||dragging||zoom||clock-lastInput<1.2)?1:0;
  breath+=(wantBreath-breath)*(reduced?1:.045);
- if(!reduced){eye.x+=smoothedX*breath;eye.y+=(smoothedY+Math.sin(clock*.55)*.035)*breath}
+ if(!reduced){eye.x+=smoothedX*breath;eye.y+=(smoothedY+Math.sin(clock*.5)*.045)*breath}
  eye.lerp(near,progress);
  focus.copy(target).lerp(nearTarget,progress);
  camera.position.copy(eye);
@@ -54018,23 +54135,22 @@ function draw(time){
 
  // Screen life: a blinking prompt and a barely-there CRT flicker.
  const blink=Math.floor(clock*1.6)%2===0;
- if(blink!==screen.userData.blink){
-  screen.userData.blink=blink;
-  ctx.fillStyle=blink?'#c8e59a':'#22362a';
-  ctx.fillRect(cursorX,854,17,26);
-  screenTex.needsUpdate=true;
+ if(blink!==face.userData.blink){
+  face.userData.blink=blink;
+  ctx.fillStyle=blink?'#cbe89c':'#22392a';
+  ctx.fillRect(cursorX,SY+468,22,32);
+  faceTex.needsUpdate=true;
  }
- const want=(hovering?1.34:1)+Math.sin(clock*7.3)*.012+Math.sin(clock*1.9)*.02;
+ const want=(hovering?1.3:1)+Math.sin(clock*7.3)*.012+Math.sin(clock*1.9)*.02;
  glow+=(want-glow)*.12;
- bloom.material.opacity=.3*glow;
- screenLight.intensity=1.5*glow;
- powerLed.material.emissiveIntensity=2.2+Math.sin(clock*2.2)*.5;
+ bloom.material.opacity=.28*glow;
+ screenLight.intensity=(RICH?1.6:0)*glow;
 
  renderer.render(scene,camera);
  frame=requestAnimationFrame(draw);
 }
 function start(){lastInput=clock;if(!frame)frame=requestAnimationFrame(draw)}
-screen.userData.blink=false;
+face.userData.blink=false;
 start();
 requestAnimationFrame(()=>host.classList.add('ready'));
 
