@@ -16,3 +16,12 @@ python3 -m http.server 8000
 ## Deploying
 
 `index.html` at the repo root is deploy-ready for GitHub Pages, Vercel, Netlify, or any static host — point your domain at it.
+
+## Workspace interaction
+
+The front room uses rounded geometry, procedural oak grain, studio reflections, soft shadows, and a detailed retro CRT. On phones the welcome copy sits above the room, with a camera fitted to the available space. Drag to orbit, click the monitor, or use **Enter my computer**.
+
+- **Sound** is opt-in and uses short, locally synthesized Web Audio cues for entering, opening, closing, and leaving.
+- **Haptics** is a separate opt-in control, shown only when the browser exposes the Vibration API. Device/browser support determines whether vibration is delivered.
+- Reduced-motion preferences disable automatic movement and haptics. Rotation can still be explicitly enabled. Rendering pauses while the tab is hidden; the reduced-motion scene idles when unchanged.
+- Textures, reflections, and sounds are generated locally; the single-file, offline architecture is retained.
